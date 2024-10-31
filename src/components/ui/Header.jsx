@@ -6,7 +6,7 @@ import { MainLogo } from "../../assets/icons/Icon";
 
 const Header = () => {
   return (
-    <div className='font-Segoe'>
+    <div className='fixed top-0 left-0 w-full bg-white z-50'>
       <div className='flex justify-between  py-5 px-4'>
         <div className='flex justify-between items-center space-x-9  pl-2'>
           <div className='flex justify-center items-center gap-x-1'>
