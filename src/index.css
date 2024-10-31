@@ -1,0 +1,7 @@
+/** @format */
+body {
+  font-family: "Segoe UI";
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
