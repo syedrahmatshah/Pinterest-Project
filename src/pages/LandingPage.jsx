@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import "../index.css";
-import Header from "../components/ui/Header";
+import Header from "../components/layout/Header";
 import Slide1 from "../assets/images/Slide1.jpg";
 import Slide2 from "../assets/images/Slide2.jpg";
 import Slide3 from "../assets/images/Slide3.jpg";
@@ -10,10 +10,11 @@ import Slide4 from "../assets/images/Slide4.jpg";
 import Slide5 from "../assets/images/Slide5.jpg";
 import Slide6 from "../assets/images/Slide6.jpg";
 import { DropDown } from "../assets/icons/Icon";
+import ImageGallery from "../components/sections/ImageGallery";
 
 const LandingPage = () => {
   return (
-    <div className='w-full h-auto '>
+    <div className='w-full h-auto rlative scrollbar-hide'>
       <section className='w-full h-auto  '>
         <Header />
         <div className='text-center absolute left-96 top-1/4 '>
@@ -23,11 +24,11 @@ const LandingPage = () => {
           <h3 className='text-6xl font-semibold text-[#C28B00]'>
             weeknight Dinner Idea
           </h3>
-          <div className='animate-bounce flex justify-center items-center ml-64 mt-44 w-12 h-12 text-center rounded-full  bg-[#C28B00] border'>
-            <DropDown />
+          <div className=' flex justify-center items-center ml-64 mt-52 w-12 h-12 text-center rounded-full animate-bouncingDropDown  bg-[#C28B00] border'>
+            <DropDown className='text-white' />
           </div>
         </div>
-        <div className='flex justify-between mt-52 relative'>
+        <div className='flex justify-between mt-60 relative'>
           <div className='flex space-x-3.5'>
             <div className='w-12 h-80 rounded-r-2xl animate-wiggleSlow'>
               <img
@@ -78,7 +79,20 @@ const LandingPage = () => {
       </section>
       <section
         id='watch'
-        className='h-96 bg-[#fffd92] mt-0'></section>
+        className='h-96 bg-[#fffd92]   absolute left-0 w-full -mt-28  z-10'>
+        <div className='flex justify-center items-center'>
+          <a
+            href='#watch'
+            className='flex items-center space-x-2'>
+            Here's how it works
+            <DropDown />
+          </a>
+        </div>
+        <ImageGallery
+          title='Search for an idea'
+          description='What do you want to try next? Think of something you’re into—like “easy chicken dinner”—and see what you find.'
+        />
+      </section>
       <section></section>
       <section></section>
       <section></section>

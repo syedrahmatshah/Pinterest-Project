@@ -2,6 +2,9 @@
 body {
   font-family: "Segoe UI";
 }
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

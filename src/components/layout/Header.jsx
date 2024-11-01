@@ -3,6 +3,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { MainLogo } from "../../assets/icons/Icon";
+import Button from "../ui/Button";
 
 const Header = () => {
   return (
@@ -35,12 +36,14 @@ const Header = () => {
             Blog
           </Link>
           <div className='space-x-2'>
-            <Link className='font-semibold text-[#FFFFFF] bg-[#CC0000] hover:bg-[#b60000] rounded-full py-2.5 px-3 text-base'>
-              Log in
-            </Link>
-            <Link className='font-semibold text-[#111111] text-base bg-[#E2E2E2] py-2.5 px-3 rounded-full'>
-              Sign up
-            </Link>
+            <Button
+              className='bg-[#CC0000] hover:bg-[#b60000] text-[#FFFFFF]'
+              title='Log in'
+            />
+            <Button
+              className=' text-[#111111] text-base bg-[#E2E2E2] '
+              title='Sign up'
+            />
           </div>
         </div>
       </div>
