@@ -2,22 +2,36 @@
 
 import React from "react";
 import Button from "../ui/Button";
-import { SearchImages } from "../constant/Constant";
 
-const ImageGallery = ({ title, description, url }) => {
+const ImageGallery = ({
+  title,
+  description,
+  images,
+  reverse,
+  titleStyle,
+  textStyle,
+  backgroundStyle,
+}) => {
   return (
-    <div className='flex justify-between w-full'>
-      <div className='w-2/4 h-96 border'>
-        {SearchImages.map((image) => (
-          <>
-            <div>{image.url}</div>
-            <p>{image.title}</p>
-          </>
+    <div className={`flex justify-between  ${reverse && "flex-row-reverse"}`}>
+      <div className={`w-2/4  relative ${backgroundStyle}`}>
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`${image.customStyle} `}>
+            <img
+              src={image.url}
+              alt={image.title}
+            />
+            <p className={`absolute  text-white ${image.textStyle} `}>
+              {image.title}
+            </p>
+          </div>
         ))}
       </div>
-      <div className='w-2/4 text-center space-y-6 flex flex-col justify-center'>
-        <h1 className='text-[#C31952] text-6xl font-bold'>{title}</h1>
-        <p className='text-[#C31952] text-2xl font-normal px-36'>
+      <div className='w-2/4 h-screen text-center space-y-6 flex flex-col  justify-center'>
+        <h1 className={` text-6xl font-bold ${titleStyle}`}>{title}</h1>
+        <p className={` text-2xl font-normal px-36 ${titleStyle}`}>
           {description}
         </p>
         <Button

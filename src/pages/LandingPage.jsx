@@ -11,11 +11,18 @@ import Slide5 from "../assets/images/Slide5.jpg";
 import Slide6 from "../assets/images/Slide6.jpg";
 import { DropDown } from "../assets/icons/Icon";
 import ImageGallery from "../components/sections/ImageGallery";
+import { IoSearch } from "react-icons/io5";
+import {
+  SearchImages,
+  HomeImages,
+  AvatarImages,
+} from "../components/constant/Constant";
+import SignUpForm from "../components/ui/SignUpForm";
 
 const LandingPage = () => {
   return (
-    <div className='w-full h-auto rlative scrollbar-hide'>
-      <section className='w-full h-auto  '>
+    <div className='w-full h-auto  scrollbar-hide'>
+      <section className='w-full h-auto rlative '>
         <Header />
         <div className='text-center absolute left-96 top-1/4 '>
           <h1 className='text-6xl font-semibold text[#111111]'>
@@ -79,7 +86,7 @@ const LandingPage = () => {
       </section>
       <section
         id='watch'
-        className='h-96 bg-[#fffd92]   absolute left-0 w-full -mt-28  z-10'>
+        className='h-[700px] bg-[#fffd92]  relative left-0 w-full -mt-28  z-10 '>
         <div className='flex justify-center items-center'>
           <a
             href='#watch'
@@ -88,14 +95,64 @@ const LandingPage = () => {
             <DropDown />
           </a>
         </div>
-        <ImageGallery
-          title='Search for an idea'
-          description='What do you want to try next? Think of something you’re into—like “easy chicken dinner”—and see what you find.'
-        />
+        <div className='relative'>
+          <ImageGallery
+            title='Search for an idea'
+            description='What do you want to try next? Think of something you’re into—like “easy chicken dinner”—and see what you find.'
+            images={SearchImages}
+            titleStyle='text-[#C31952]'
+          />
+          <a
+            href=''
+            className='text-[#6E0F3C] text-2xl font-bold w-[340px] absolute top-60 left-40 z-30 bg-white p-10 rounded-full flex items-center space-x-1'>
+            <span>
+              <IoSearch className='font-bold text-2xl' />
+            </span>
+            easy chicken dinner
+          </a>
+        </div>
       </section>
-      <section></section>
-      <section></section>
-      <section></section>
+      <section className='h-[640px] bg-[#DAFFF6] '>
+        <div>
+          <div className='relative'>
+            <ImageGallery
+              title='Save ideas you like'
+              description='Collect your favorites so you can get back to them later'
+              images={HomeImages}
+              reverse={true}
+              titleStyle='text-[#006b6c]'
+            />
+          </div>
+        </div>
+      </section>
+      <section className='h-[700px] bg-[#FFE2EB] relative'>
+        <div>
+          <div className='relative '>
+            <ImageGallery
+              title='See it,make it,try it,do it'
+              description='The best part of Pinterest is discovering new things and ideas from people around the world.'
+              images={AvatarImages}
+              reverse={false}
+              titleStyle='text-[#C32F00] px-32'
+              backgroundStyle='bg-[#CEA98C] h-[700px]'
+            />
+          </div>
+        </div>
+      </section>
+      <section className='h-[700px] bg-[red] '>
+        <div className='w-full '>
+          <div className='relative flex justify-between items-center'>
+            <div className='w-2/4 h-screen  flex flex-col  justify-center items-center '>
+              <h1 className=' text-6xl font-bold text-white px-44 leading-relaxed '>
+                Sign up to get you ideas{" "}
+              </h1>
+            </div>
+            <div className='w-2/4'>
+              <SignUpForm description='Find new ideas to try' />
+            </div>
+          </div>
+        </div>
+      </section>
       <section></section>
     </div>
   );
