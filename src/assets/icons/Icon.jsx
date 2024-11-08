@@ -4,7 +4,7 @@ export const MainLogo = () => {
   return (
     <svg
       aria-label='Pinterest'
-      class='g_1 gUZ U9O kVc'
+      className='g_1 gUZ U9O kVc'
       height='32'
       role='img'
       viewBox='0 0 24 24'
@@ -19,7 +19,7 @@ export const DropDown = () => {
   return (
     <svg
       aria-label='Scroll down'
-      class='AR6 gUZ U9O kVc'
+      className='AR6 gUZ U9O kVc'
       role='img'
       viewBox='0 0 24 24'
       fill='currentColor'

@@ -1,38 +1,29 @@
 /** @format */
 
-import { Button, Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
-import { useState } from "react";
-const Modal = () => {
-  const [isOpen, setIsOpen] = useState(true);
+import { Dialog, DialogPanel } from "@headlessui/react";
+import { RxCross2 } from "react-icons/rx";
 
-  function open() {
-    setIsOpen(true);
-  }
-
-  function close() {
-    setIsOpen(false);
-  }
+const Modal = ({ openModal, closeModal, children }) => {
   return (
     <div>
       <>
-        <Button
-          onClick={open}
-          className='rounded-md bg-black/20 py-2 px-4 text-sm font-medium text-white focus:outline-none data-[hover]:bg-black/30 data-[focus]:outline-1 data-[focus]:outline-white'>
-          Open dialog
-        </Button>
-
         <Dialog
-          open={isOpen}
+          open={openModal}
+          onClose={closeModal}
           as='div'
-          className='relative z-10 focus:outline-none'
-          onClose={close}
-          __demoMode>
-          <div className='fixed inset-0 z-10 w-screen overflow-y-auto'>
-            <div className='flex min-h-full items-center justify-center p-4'>
+          className='relative z-30 focus:outline-none  '>
+          <div className='fixed inset-0 z-30  overflow-y-auto  '>
+            <div className=' w-full flex min-h-full items-center justify-center p-6 backdrop-blur-xs bg-black bg-opacity-60'>
               <DialogPanel
                 transition
-                className='w-full max-w-md rounded-xl bg-white/5 p-6 backdrop-blur-2xl duration-300 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0'>
-                {children}
+                className='w-full  duration-300 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0'>
+                <div className='w-6/12 mx-auto relative '>
+                  <RxCross2
+                    onClick={closeModal}
+                    className='w-7 h-7  left-96 top-4 absolute hover:bg-gray-300 rounded-full cursor-pointer'
+                  />
+                  {children}
+                </div>
               </DialogPanel>
             </div>
           </div>

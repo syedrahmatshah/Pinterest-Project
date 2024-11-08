@@ -60,7 +60,7 @@ export const HomeImages = [
     url: bottomRight,
     title: "Our bathroom upgrade",
     customStyle: "w-52 h-52 absolute mt-28 right-24 text-[28px]",
-    textStyle: "w-44 top-24 left-8 font-medium",
+    textStyle: "w-44 top-24 left-8 px-3 font-medium",
   },
   {
     url: bottomLeft,
@@ -85,7 +85,8 @@ export const HomeImages = [
 export const AvatarImages = [
   {
     url: ShopCard,
-    customStyle: "w-auto h-",
+    customStyle: "w-auto h-full ",
+    customHeight: "h-full",
   },
   {
     url: Avatar,

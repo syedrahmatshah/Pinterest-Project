@@ -13,15 +13,16 @@ const ImageGallery = ({
   backgroundStyle,
 }) => {
   return (
-    <div className={`flex justify-between  ${reverse && "flex-row-reverse"}`}>
+    <div className={`flex justify-between   ${reverse && "flex-row-reverse"}`}>
       <div className={`w-2/4  relative ${backgroundStyle}`}>
         {images.map((image, index) => (
           <div
             key={index}
-            className={`${image.customStyle} `}>
+            className={`${image.customStyle}`}>
             <img
               src={image.url}
               alt={image.title}
+              className={`${image.customHeight} `}
             />
             <p className={`absolute  text-white ${image.textStyle} `}>
               {image.title}

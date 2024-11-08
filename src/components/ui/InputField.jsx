@@ -10,19 +10,26 @@ const InputField = ({
   showToggle,
   placeholder,
   className,
+  onClick,
+  icon,
 }) => {
   return (
-    <div className='px-32 w-full'>
+    <div className='px-24 w-full relative'>
       <label className='block text-sm font-normal text-[#111111]'>
         {label}
       </label>
-      <input
-        type={type}
-        value={value}
-        onChange={onChange}
-        placeholder={placeholder}
-        className={`border rounded-xl mb-2 p-2 w-full focus:border-[#E9E9E9] hover:border-[#928e8e]  text-base font-normal text-[#111111] ${className}`}
-      />
+      <div
+        className={`rounded-xl mb-2 flex items-center justify-between focus-within:border-black border-gray-500  border w-full text-base font-normal text-[#111111]`}>
+        <input
+          type={type}
+          value={value}
+          onChange={onChange}
+          placeholder={placeholder}
+          onClick={onClick}
+          className={`py-2 px-2 rounded-xl w-full outline-none ${className}`}
+        />
+        {icon}
+      </div>
     </div>
   );
 };
