@@ -1,7 +1,7 @@
 /** @format */
 
 import "../index.css";
-import Header from "../components/layout/Header";
+import Header from "../components/layout/GuestHeader";
 import Slide1 from "../assets/images/Slide1.jpg";
 import Slide2 from "../assets/images/Slide2.jpg";
 import Slide3 from "../assets/images/Slide3.jpg";
@@ -20,6 +20,7 @@ import {
 } from "../components/constant/Constant";
 import SignUpForm from "./SignUpForm";
 import React, { useRef, useState } from "react";
+import AuthenticatdHeader from "../components/layout/AuthenticatedHeader";
 
 const LandingPage = () => {
   return (
@@ -27,7 +28,7 @@ const LandingPage = () => {
       <div className='w-full h-auto  scrollbar-hide'>
         <section className='w-full h-auto rlative '>
           <div className='w-full h-[150px] absolute z-10 bottom-[63px]  bg-gradient-to-t from-white to-transparent'></div>
-          <Header />
+          <AuthenticatdHeader />
           <div className='text-center absolute left-96 z-10 top-1/4 '>
             <h1 className='text-6xl font-semibold text[#111111]'>
               Get Your Next

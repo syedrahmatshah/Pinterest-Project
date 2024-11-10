@@ -100,3 +100,23 @@ export const AvatarImages = [
     customStyle: "w-24 h-24 absolute top-[60%] left-10",
   },
 ];
+
+export const SwiperImages = [
+  {
+    url: SearchCenter,
+    customStyle: "w-80 h-64 absolute z-10 left-52 top-20 ",
+  },
+
+  {
+    url: SearchRight,
+    customStyle: "w-44 h-44 ml-auto mr-20 ",
+  },
+  {
+    url: SearchTopLeft,
+    customStyle: "w-52 h-44 ml-16 ",
+  },
+  {
+    url: SearchTopRight,
+    customStyle: "w-40 h-56 ml-auto mr-16 mt-4 ",
+  },
+];

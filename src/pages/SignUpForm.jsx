@@ -31,7 +31,7 @@ const SignUpForm = ({ onSubmit }) => {
     <Form
       onSubmit={handleSubmit}
       description='Find new ideas to try'>
-      <div className='flex flex-col items-center'>
+      <div className='flex flex-col items-center px-24'>
         <InputField
           type='email'
           label='Email'
@@ -83,9 +83,9 @@ const SignUpForm = ({ onSubmit }) => {
             <a
               href=''
               className='text-[#111111] font-semibold hover:underline'>
-              Term of Service
+              &nbsp;Term of Service
             </a>
-            and acknowledge you've read our
+            &nbsp;and acknowledge you've read our
             <a
               href=''
               className='text-[#111111] font-semibold hover:underline'>

@@ -8,7 +8,7 @@ import SignUpModal from "../modals/SignUpModal";
 import LogInForm from "../modals/LogInForm";
 import { AuthContext } from "../../context/authContext";
 
-const Header = () => {
+const GuestHeader = () => {
   const { isAuthenticated, isLoading, error } = useContext(AuthContext);
   const [isOpenSignUpModal, setIsOpenSignUpModal] = useState(false);
   const [isOpenLogInModal, setIsOpenOpenLogInModal] = useState(false);
@@ -64,7 +64,7 @@ const Header = () => {
                 onClick={() => setIsOpenOpenLogInModal(true)}
               />
               <Button
-                className='text-[#111111] text-base bg-[#E2E2E2]'
+                className='text-[#111111] text-base bg-[#E2E2E2] hover:bg-[#e2e2e2a8]'
                 title='Sign up'
                 onClick={() => setIsOpenSignUpModal(true)}
               />
@@ -84,4 +84,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default GuestHeader;

@@ -12,9 +12,11 @@ const InputField = ({
   className,
   onClick,
   icon,
+  onFocus,
+  onBlur,
 }) => {
   return (
-    <div className='px-24 w-full relative'>
+    <div className=' w-full relative'>
       <label className='block text-sm font-normal text-[#111111]'>
         {label}
       </label>
@@ -23,6 +25,8 @@ const InputField = ({
         <input
           type={type}
           value={value}
+          onFocus={onFocus}
+          onBlur={onBlur}
           onChange={onChange}
           placeholder={placeholder}
           onClick={onClick}

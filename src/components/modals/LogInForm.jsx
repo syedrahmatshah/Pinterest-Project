@@ -29,7 +29,7 @@ const LogInForm = ({ openModal, closeModal, onSubmit }) => {
       openModal={openModal}
       closeModal={closeModal}>
       <Form onSubmit={handleSubmit}>
-        <div className='flex flex-col items-center'>
+        <div className='flex flex-col items-center px-24'>
           <InputField
             type='email'
             label='Email'
@@ -80,7 +80,7 @@ const LogInForm = ({ openModal, closeModal, onSubmit }) => {
                 className='text-[#111111] font-semibold hover:underline'>
                 Term of Service
               </a>
-              and acknowledge you've read our
+              &nbsp;and acknowledge you've read our
               <a
                 href=''
                 className='text-[#111111] font-semibold hover:underline'>
