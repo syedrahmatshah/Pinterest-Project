@@ -1,7 +1,7 @@
 /** @format */
 
 import "../index.css";
-import Header from "../components/layout/GuestHeader";
+import GuestHeader from "../components/layout/GuestHeader";
 import Slide1 from "../assets/images/Slide1.jpg";
 import Slide2 from "../assets/images/Slide2.jpg";
 import Slide3 from "../assets/images/Slide3.jpg";
@@ -28,7 +28,8 @@ const LandingPage = () => {
       <div className='w-full h-auto  scrollbar-hide'>
         <section className='w-full h-auto rlative '>
           <div className='w-full h-[150px] absolute z-10 bottom-[63px]  bg-gradient-to-t from-white to-transparent'></div>
-          <AuthenticatdHeader />
+          {/* <AuthenticatdHeader /> */}
+          <GuestHeader/>
           <div className='text-center absolute left-96 z-10 top-1/4 '>
             <h1 className='text-6xl font-semibold text[#111111]'>
               Get Your Next

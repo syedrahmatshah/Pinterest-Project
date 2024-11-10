@@ -15,17 +15,51 @@ export const MainLogo = () => {
   );
 };
 
-export const DropDown = () => {
+export const DropDown = ({ className }) => {
   return (
     <svg
       aria-label='Scroll down'
-      className='AR6 gUZ U9O kVc'
+      class='AR6 gUZ U9O kVc'
       role='img'
+      className={className}
       viewBox='0 0 24 24'
       fill='currentColor'
       width='14'
       height='14'>
       <path d='M20.16 6.65 12 14.71 3.84 6.65a2.27 2.27 0 0 0-3.18 0 2.2 2.2 0 0 0 0 3.15L12 21 23.34 9.8a2.2 2.2 0 0 0 0-3.15 2.26 2.26 0 0 0-3.18 0'></path>
+    </svg>
+  );
+};
+
+export const IoSearch = ({ className }) => {
+  return (
+    <svg
+      aria-label='Search icon'
+      class='BNH gUZ U9O kVc'
+      height='16'
+      role='img'
+      viewBox='0 0 24 24'
+      className={className}
+      fill='#767676'
+      width='16'>
+      <path d='M10 16a6 6 0 1 1 .01-12.01A6 6 0 0 1 10 16m13.12 2.88-4.26-4.26a10 10 0 1 0-4.24 4.24l4.26 4.26a3 3 0 1 0 4.24-4.24'></path>
+    </svg>
+  );
+};
+
+export const NotificationIcon = ({ className }) => {
+  return (
+    <svg
+      aria-hidden='true'
+      aria-label=''
+      class='BNH gUZ U9O kVc'
+      height='24'
+      className={className}
+      role='img'
+      viewBox='0 0 24 24'
+      fill='currentColor'
+      width='24'>
+      <path d='M19 7v6.17A10 10 0 0 1 22 19H2a10 10 0 0 1 3-5.83V7a7 7 0 1 1 14 0m-4 14a3 3 0 1 1-6 0z'></path>
     </svg>
   );
 };

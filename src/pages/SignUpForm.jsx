@@ -101,9 +101,9 @@ const SignUpForm = ({ onSubmit }) => {
         <div className='text-xs font-normal text-[#111111] my-6'>
           Already a member? <a href=''>Log in</a>
         </div>
-        <div className='p-4 w-full rounded-b-3xl text-base text-[#111111] font-semibold text-center bg-[#E9E9E9]'>
-          <a href=''>Create a free business account</a>
-        </div>
+      </div>
+      <div className='p-4 w-full rounded-b-3xl text-base text-[#111111] font-semibold text-center bg-[#E9E9E9]'>
+        <a href=''>Create a free business account</a>
       </div>
     </Form>
   );

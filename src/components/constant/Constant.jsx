@@ -16,6 +16,11 @@ import homeTopLeft from "../../assets/images/homeTopLeft.png";
 import Avatar from "../../assets/images/Avatar.png";
 import ShopCard from "../../assets/images/ShopCard.png";
 import AvatarRound from "../../assets/images/AvatarRound.png";
+import image1 from "../../assets/images/image1.jpg";
+import image2 from "../../assets/images/image2.jpg";
+import image3 from "../../assets/images/image3.jpg";
+import image4 from "../../assets/images/image4.jpg";
+import image5 from "../../assets/images/image5.jpg";
 
 export const SearchImages = [
   {
@@ -118,5 +123,52 @@ export const SwiperImages = [
   {
     url: SearchTopRight,
     customStyle: "w-40 h-56 ml-auto mr-16 mt-4 ",
+  },
+];
+
+export const CardData = [
+  {
+    imageUrl: image1,
+    title: "Vehicle",
+  },
+  {
+    imageUrl: image2,
+    title: "Islamic art",
+  },
+  {
+    imageUrl: image3,
+    title: "Nature PhotoGraphy",
+  },
+  {
+    imageUrl: image4,
+    title: "Quotes",
+  },
+  {
+    imageUrl: image5,
+    title: "Wallpapers",
+  },
+  {
+    imageUrl: image3,
+    title: "Nature PhotoGraphy",
+  },
+  {
+    imageUrl: image4,
+    title: "Quotes",
+  },
+  {
+    imageUrl: image5,
+    title: "Wallpapers",
+  },
+  {
+    imageUrl: image3,
+    title: "Nature PhotoGraphy",
+  },
+  {
+    imageUrl: image4,
+    title: "Quotes",
+  },
+  {
+    imageUrl: image4,
+    title: "Quotes",
   },
 ];

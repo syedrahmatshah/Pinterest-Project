@@ -9,7 +9,7 @@ import Button from "../ui/Button";
 import { FcGoogle } from "react-icons/fc";
 import { AuthContext } from "../../context/authContext";
 
-const LogInForm = ({ openModal, closeModal, onSubmit }) => {
+const LogInForm = ({ openModal, closeModal, onSubmit, onBlur }) => {
   const { setIsAuthenticated, logIn, isLoading } = useContext(AuthContext);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -27,7 +27,8 @@ const LogInForm = ({ openModal, closeModal, onSubmit }) => {
   return (
     <Modal
       openModal={openModal}
-      closeModal={closeModal}>
+      closeModal={closeModal}
+      onBlur={onBlur}>
       <Form onSubmit={handleSubmit}>
         <div className='flex flex-col items-center px-24'>
           <InputField

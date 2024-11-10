@@ -75,10 +75,12 @@ const GuestHeader = () => {
       <SignUpModal
         openModal={isOpenSignUpModal}
         closeModal={() => setIsOpenSignUpModal(false)}
+        onBlur={() => setIsOpenSignUpModal(false)}
       />
       <LogInForm
         openModal={isOpenLogInModal}
         closeModal={() => setIsOpenOpenLogInModal(false)}
+        onBlur={() => setIsOpenOpenLogInModal(false)}
       />
     </div>
   );

@@ -3,13 +3,14 @@
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { RxCross2 } from "react-icons/rx";
 
-const Modal = ({ openModal, closeModal, children }) => {
+const Modal = ({ openModal, closeModal, children, onBlur }) => {
   return (
     <div>
       <>
         <Dialog
           open={openModal}
           onClose={closeModal}
+          onBlur={onBlur}
           as='div'
           className='relative z-30 focus:outline-none  '>
           <div className='fixed inset-0 z-30  overflow-y-auto  '>
