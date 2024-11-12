@@ -9,20 +9,27 @@ import LogInForm from "../modals/LogInForm";
 import { AuthContext } from "../../context/authContext";
 
 const GuestHeader = () => {
+  // Context to check if the user is authenticated, loading, or if there's an error
   const { isAuthenticated, isLoading, error } = useContext(AuthContext);
+
+  // State to manage the modal visibility for sign-up and log-in forms
   const [isOpenSignUpModal, setIsOpenSignUpModal] = useState(false);
   const [isOpenLogInModal, setIsOpenOpenLogInModal] = useState(false);
 
   return (
     <div className='fixed top-0 left-0 w-full bg-white z-20'>
+      {/* Header Section */}
       <div className='flex justify-between py-5 px-4'>
+        {/* Logo and Navigation Links */}
         <div className='flex justify-between items-center space-x-9 pl-2'>
           <div className='flex justify-center items-center gap-x-1'>
+            {/* Logo and site title */}
             <Link>
               <MainLogo />
             </Link>
             <h1 className='text-xl font-semibold text-[#CC0000]'>Pinterset</h1>
           </div>
+          {/* Navigation links to Watch and Explore */}
           <Link
             to='#Watch'
             className='font-semibold text-[#111111] text-base'>
@@ -32,7 +39,10 @@ const GuestHeader = () => {
             Explore
           </Link>
         </div>
+
+        {/* Conditional Rendering based on Authentication */}
         {isAuthenticated ? (
+          // If the user is authenticated, show Home, Create buttons, and a placeholder for profile icon
           <div className='flex justify-between items-center space-x-10'>
             <div className='space-x-2 flex items-center'>
               <Button
@@ -43,10 +53,12 @@ const GuestHeader = () => {
                 className='text-[#111111] text-base '
                 title='Create'
               />
+              {/* Placeholder for Profile Icon */}
               <div className='w-5 h-5 border rounded-full bg-slate-500'></div>
             </div>
           </div>
         ) : (
+          // If the user is not authenticated, show links for About, Business, Blog and buttons for Log in and Sign up
           <div className='flex justify-between items-center space-x-10'>
             <Link className='font-semibold text-[#111111] text-base hover:underline decoration-[#111111]'>
               About
@@ -57,12 +69,15 @@ const GuestHeader = () => {
             <Link className='font-semibold text-[#111111] text-base hover:underline decoration-[#111111]'>
               Blog
             </Link>
+            {/* Buttons for Log in and Sign up */}
             <div className='space-x-2'>
+              {/* Log in button triggers LogInForm modal */}
               <Button
                 className='bg-[#CC0000] hover:bg-[#b60000] text-[#FFFFFF]'
                 title='Log in'
                 onClick={() => setIsOpenOpenLogInModal(true)}
               />
+              {/* Sign up button triggers SignUpModal modal */}
               <Button
                 className='text-[#111111] text-base bg-[#E2E2E2] hover:bg-[#e2e2e2a8]'
                 title='Sign up'
@@ -72,6 +87,8 @@ const GuestHeader = () => {
           </div>
         )}
       </div>
+
+      {/* Modals for SignUp and LogIn forms */}
       <SignUpModal
         openModal={isOpenSignUpModal}
         closeModal={() => setIsOpenSignUpModal(false)}

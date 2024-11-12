@@ -3,6 +3,7 @@
 import "./index.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
+import CreateTool from "./pages/CreateTool";
 
 function App() {
   return (
@@ -11,6 +12,10 @@ function App() {
         <Route
           path='/'
           element={<LandingPage />}
+        />
+        <Route
+          path='/create-tool'
+          element={<CreateTool />}
         />
       </Routes>
     </Router>

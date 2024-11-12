@@ -12,7 +12,7 @@ const Card = ({ imageUrl, title, description, stylesImage, className }) => {
           className={`${className}`}
         />
       )}
-      <h3>{title}</h3>
+      <h3 className='text-base font-semibold text-[#111111]'>{title}</h3>
     </div>
   );
 };

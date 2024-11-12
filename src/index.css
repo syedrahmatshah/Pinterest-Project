@@ -5,6 +5,10 @@ body {
 body::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
