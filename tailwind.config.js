@@ -2,16 +2,17 @@
  * @format
  * @type {import('tailwindcss').Config}
  */
+const withMT = require("@material-tailwind/react/utils/withMT");
 
-export default {
+module.exports = withMT({
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       keyframes: {
         wiggle: {
-          "0%": { transform: "translateY(0)", opacity: "1" }, // starting & ending point
+          "0%": { transform: "translateY(0)", opacity: "1" },
           "25%": { transform: "translateY(-10px)", opacity: "0" },
-          "50%": { transform: "translateY(-40px)", opacity: "1" }, // highest point
+          "50%": { transform: "translateY(-40px)", opacity: "1" },
           "75%": { transform: "translateY(-40px)", opacity: "1" },
           "100%": { transform: "translateY(-40px)", opacity: "1" },
         },
@@ -33,4 +34,4 @@ export default {
     },
   },
   plugins: [],
-};
+});

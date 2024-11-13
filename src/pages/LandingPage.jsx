@@ -33,7 +33,7 @@ const LandingPage = () => {
           <div className='w-full h-[150px] absolute z-10 bottom-[63px] bg-gradient-to-t from-white to-transparent'></div>
 
           {/* Main authenticated header component */}
-          <AuthenticatdHeader />
+          <GuestHeader />
 
           {/* Hero text and Call to Action */}
           <div className='text-center absolute left-96 z-10 top-1/4 '>

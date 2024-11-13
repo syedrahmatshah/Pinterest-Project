@@ -8,8 +8,7 @@ const SignUpModal = ({ openModal, closeModal, onBlur }) => {
   return (
     <Modal
       openModal={openModal}
-      closeModal={closeModal}
-      onBlur={onBlur}>
+      closeModal={closeModal}>
       <SignUpForm />
     </Modal>
   );

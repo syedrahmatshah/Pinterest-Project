@@ -10,6 +10,7 @@ export const AuthContextProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
   const [data, setData] = useState([]);
+  const [isLogin, setIsLogin] = useState(false);
 
   const signUp = async ({ email, dateOfBirth, password }) => {
     setIsLoading(true);
@@ -64,6 +65,8 @@ export const AuthContextProvider = ({ children }) => {
         data,
         signUp,
         logIn,
+        isLogin,
+        setIsLogin,
       }}>
       {children}
     </AuthContext.Provider>

@@ -8,10 +8,13 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import Button from "../ui/Button";
 import { FcGoogle } from "react-icons/fc";
 import { AuthContext } from "../../context/authContext";
+import { useNavigate } from "react-router-dom";
 
 const LogInForm = ({ openModal, closeModal, onSubmit, onBlur }) => {
+  const navigate = useNavigate();
   // Accessing authentication context to handle user authentication
-  const { setIsAuthenticated, logIn, isLoading } = useContext(AuthContext);
+  const { setIsAuthenticated, logIn, isLoading, isLogin, setIsLogin } =
+    useContext(AuthContext);
 
   // Local state to manage form fields and password visibility toggle
   const [email, setEmail] = useState("");
@@ -21,6 +24,11 @@ const LogInForm = ({ openModal, closeModal, onSubmit, onBlur }) => {
   // Toggle password visibility (show/hide)
   const togglePassword = () => {
     setIsVisiblePassword(!isVisiblePassword);
+  };
+
+  const handleLogin = () => {
+    setIsLogin(true);
+    navigate("/AuthenticatedGallery");
   };
 
   // Handle form submission
@@ -33,7 +41,7 @@ const LogInForm = ({ openModal, closeModal, onSubmit, onBlur }) => {
     <Modal
       openModal={openModal} // Modal visibility controlled by parent
       closeModal={closeModal} // Modal close handler
-      onBlur={onBlur} // Close modal on blur event
+      // Close modal on blur event
     >
       <Form onSubmit={handleSubmit}>
         <div className='flex flex-col items-center px-24'>
@@ -77,6 +85,7 @@ const LogInForm = ({ openModal, closeModal, onSubmit, onBlur }) => {
           <Button
             className='font-semibold w-64 mb-1 rounded-full py-2.5 px-3 text-base bg-[#CC0000] hover:bg-[#b60000] text-[#FFFFFF] '
             title={isLoading ? "LogIn..." : "Continue"} // Button title changes based on loading state
+            onClick={handleLogin}
             type='submit'
           />
 

@@ -21,6 +21,18 @@ import image2 from "../../assets/images/image2.jpg";
 import image3 from "../../assets/images/image3.jpg";
 import image4 from "../../assets/images/image4.jpg";
 import image5 from "../../assets/images/image5.jpg";
+import imageGallery1 from "../../assets/images/imageGallery1.jpg";
+import imageGallery2 from "../../assets/images/imageGallery2.jpg";
+import imageGallery3 from "../../assets/images/imageGallery3.jpg";
+import imageGallery4 from "../../assets/images/imageGallery4.jpg";
+import imageGallery5 from "../../assets/images/imageGallery5.jpg";
+import imageGallery6 from "../../assets/images/imageGallery6.jpg";
+import imageGallery7 from "../../assets/images/imageGallery7.jpg";
+import imageGallery8 from "../../assets/images/imageGallery8.jpg";
+import imageGallery9 from "../../assets/images/imageGallery9.jpg";
+import imageGallery10 from "../../assets/images/imageGallery10.jpg";
+import imageGallery11 from "../../assets/images/imageGallery11.jpg";
+import imageGallery12 from "../../assets/images/imageGallery12.jpg";
 
 export const SearchImages = [
   {
@@ -172,3 +184,170 @@ export const CardData = [
     title: "Quotes",
   },
 ];
+
+export const imageGallery = [
+  {
+    src: imageGallery1,
+    customStyle: "height-[44px]",
+  },
+  {
+    src: imageGallery2,
+    customStyle: "height-[44px]",
+  },
+  {
+    src: imageGallery3,
+    customStyle: "height-[44px]",
+  },
+  {
+    src: imageGallery4,
+    customStyle: "height-[44px]",
+  },
+  {
+    src: imageGallery5,
+    customStyle: "height-[44px]",
+  },
+  {
+    src: imageGallery6,
+    customStyle: "height-[44px]",
+  },
+  {
+    src: imageGallery7,
+    customStyle: "height-[44px]",
+  },
+  {
+    src: imageGallery8,
+    customStyle: "height-[44px]",
+  },
+  {
+    src: imageGallery9,
+  },
+  {
+    src: imageGallery10,
+  },
+  {
+    src: imageGallery11,
+  },
+  {
+    src: imageGallery12,
+  },
+];
+
+{
+  /* <div className='grid grid-cols-5 gap-4'>
+      <div className='space-y-5'>
+        <div>
+          <img
+            className='h-auto w-full rounded-lg object-cover object-center'
+            src={imageGallery1}
+            alt='gallery-photo'
+          />
+        </div>
+        <div>
+          <img
+            className='h-auto w-full rounded-lg object-cover object-center '
+            src={imageGallery2}
+            alt='gallery-photo'
+          />
+        </div>
+        <div>
+          <img
+            className='h-auto w-full rounded-lg object-cover object-center'
+            src={imageGallery3}
+            alt='gallery-photo'
+          />
+        </div>
+      </div>
+      <div className='space-y-5'>
+        <div>
+          <img
+            className='h-auto w-full rounded-lg object-cover object-center'
+            src={imageGallery4}
+            alt='gallery-photo'
+          />
+        </div>
+        <div>
+          <img
+            className='h-56 w-full rounded-lg object-cover object-center'
+            src={imageGallery5}
+            alt='gallery-photo'
+          />
+        </div>
+        <div>
+          <img
+            className='h-auto w-full rounded-lg object-cover object-center '
+            src={imageGallery6}
+            alt='gallery-photo'
+          />
+        </div>
+      </div>
+      <div className='space-y-5'>
+        <div>
+          <img
+            className='h-56 w-full rounded-lg object-cover object-center'
+            src={imageGallery7}
+            alt='gallery-photo'
+          />
+        </div>
+        <div>
+          <img
+            className='h-auto w-full rounded-lg object-cover object-center '
+            src={imageGallery8}
+            alt='gallery-photo'
+          />
+        </div>
+        <div>
+          <img
+            className='h-auto w-full rounded-lg object-cover object-center'
+            src={imageGallery9}
+            alt='gallery-photo'
+          />
+        </div>
+      </div>
+      <div className='space-y-5'>
+        <div>
+          <img
+            className='h-auto w-full rounded-lg object-cover object-center'
+            src={imageGallery10}
+            alt='gallery-photo'
+          />
+        </div>
+        <div>
+          <img
+            className='h-auto w-full rounded-lg object-cover object-center'
+            src={imageGallery11}
+            alt='gallery-photo'
+          />
+        </div>
+        <div>
+          <img
+            className='h-56 w-full rounded-lg object-cover object-center'
+            src={imageGallery12}
+            alt='gallery-photo'
+          />
+        </div>
+      </div>
+      <div className='space-y-5'>
+        <div>
+          <img
+            className='h-56 w-full rounded-lg object-cover object-center '
+            src={imageGallery13}
+            alt='gallery-photo'
+          />
+        </div>
+        <div>
+          <img
+            className='h-auto w-full rounded-lg object-cover object-center'
+            src={imageGallery14}
+            alt='gallery-photo'
+          />
+        </div>
+        <div>
+          <img
+            className='h-auto w-full rounded-lg object-cover object-center'
+            src={imageGallery15}
+            alt='gallery-photo'
+          />
+        </div>
+      </div>
+    </div> */
+}

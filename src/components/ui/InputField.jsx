@@ -19,7 +19,7 @@ const InputField = ({
     <div className=' w-full relative'>
       <label className='block text-sm font-normal'>{label}</label>
       <div
-        className={`rounded-xl mb-2 flex items-center justify-between focus-within:border-slate-400  border w-full text-base font-normal text-[#111111]`}>
+        className={`rounded-xl mb-2 flex items-center justify-between focus-within:border-slate-400 border w-full text-base font-normal text-[#111111]`}>
         <input
           type={type}
           value={value}
