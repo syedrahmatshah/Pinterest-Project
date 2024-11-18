@@ -10,11 +10,11 @@ import {
 import LandingPage from "./pages/LandingPage";
 import CreateTool from "./pages/CreateTool";
 import AuthenticatedGallery from "./pages/AuthenticatedGallery";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AuthContext } from "./context/authContext";
 
 function App() {
-  const { isLogin } = useContext(AuthContext);
+  const { isAuthenticated } = useContext(AuthContext);
 
   return (
     <Router>
@@ -22,7 +22,7 @@ function App() {
         <Route
           path='/'
           element={
-            isLogin ? (
+            isAuthenticated ? (
               <Navigate
                 to='/AuthenticatedGallery'
                 replace
@@ -36,7 +36,7 @@ function App() {
         <Route
           path='/AuthenticatedGallery'
           element={
-            isLogin ? (
+            isAuthenticated ? (
               <AuthenticatedGallery />
             ) : (
               <Navigate

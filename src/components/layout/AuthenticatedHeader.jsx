@@ -13,9 +13,7 @@ import { CardData } from "../constant/Constant";
 import Card from "../ui/Card";
 
 const AuthenticatdHeader = () => {
-  // State for controlling the focus of the search input field
   const [isFocused, setIsFocused] = useState(false);
-  // State for holding the value typed in the search input
   const [isInput, setIsInput] = useState("");
 
   // Handle input changes

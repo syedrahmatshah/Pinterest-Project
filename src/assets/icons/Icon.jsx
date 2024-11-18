@@ -19,7 +19,6 @@ export const DropDown = ({ className }) => {
   return (
     <svg
       aria-label='Scroll down'
-      class='AR6 gUZ U9O kVc'
       role='img'
       className={className}
       viewBox='0 0 24 24'
@@ -35,7 +34,6 @@ export const IoSearch = ({ className }) => {
   return (
     <svg
       aria-label='Search icon'
-      class='BNH gUZ U9O kVc'
       height='16'
       role='img'
       viewBox='0 0 24 24'
@@ -52,7 +50,6 @@ export const NotificationIcon = ({ className }) => {
     <svg
       aria-hidden='true'
       aria-label=''
-      class='BNH gUZ U9O kVc'
       height='24'
       className={className}
       role='img'
@@ -69,7 +66,6 @@ export const ArrowLeft = ({ className }) => {
     <svg
       aria-hidden='true'
       aria-label=''
-      class='Uvi gUZ U9O kVc'
       height='20'
       className={className}
       role='img'
@@ -85,7 +81,6 @@ export const AddSign = ({ className }) => {
     <svg
       aria-hidden='true'
       aria-label=''
-      class='Uvi gUZ U9O kVc'
       height='20'
       role='img'
       className={className}
@@ -101,7 +96,6 @@ export const ArrowRight = ({ className }) => {
     <svg
       aria-hidden='true'
       aria-label=''
-      class='Uvi gUZ U9O kVc'
       height='20'
       className={className}
       role='img'
@@ -116,7 +110,6 @@ export const DragFile = () => {
   return (
     <svg
       aria-label='Add files'
-      class='bW6 gUZ U9O kVc'
       height='32'
       role='img'
       viewBox='0 0 24 24'

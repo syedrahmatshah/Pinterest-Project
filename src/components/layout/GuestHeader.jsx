@@ -1,7 +1,7 @@
 /** @format */
 
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { MainLogo } from "../../assets/icons/Icon";
 import Button from "../ui/Button";
 import SignUpModal from "../modals/SignUpModal";
@@ -9,6 +9,7 @@ import LogInForm from "../modals/LogInForm";
 import { AuthContext } from "../../context/authContext";
 
 const GuestHeader = () => {
+  const navigate = useNavigate;
   // Context to check if the user is authenticated, loading, or if there's an error
   const { isAuthenticated, isLoading, error } = useContext(AuthContext);
 
@@ -42,21 +43,7 @@ const GuestHeader = () => {
 
         {/* Conditional Rendering based on Authentication */}
         {isAuthenticated ? (
-          // If the user is authenticated, show Home, Create buttons, and a placeholder for profile icon
-          <div className='flex justify-between items-center space-x-10'>
-            <div className='space-x-2 flex items-center'>
-              <Button
-                className='  text-black'
-                title='Home'
-              />
-              <Button
-                className='text-[#111111] text-base '
-                title='Create'
-              />
-              {/* Placeholder for Profile Icon */}
-              <div className='w-5 h-5 border rounded-full bg-slate-500'></div>
-            </div>
-          </div>
+          navigate("/AuthenticatedGallery")
         ) : (
           // If the user is not authenticated, show links for About, Business, Blog and buttons for Log in and Sign up
           <div className='flex justify-between items-center space-x-10'>

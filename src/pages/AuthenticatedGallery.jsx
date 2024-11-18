@@ -1,151 +1,46 @@
 /** @format */
 
 import React from "react";
-import imageGallery1 from "../assets/images/imageGallery1.jpg";
-import imageGallery2 from "../assets/images/imageGallery2.jpg";
-import imageGallery3 from "../assets/images/imageGallery3.jpg";
-import imageGallery4 from "../assets/images/imageGallery4.jpg";
-import imageGallery5 from "../assets/images/imageGallery5.jpg";
-import imageGallery6 from "../assets/images/imageGallery6.jpg";
-import imageGallery7 from "../assets/images/imageGallery7.jpg";
-import imageGallery8 from "../assets/images/imageGallery8.jpg";
-import imageGallery9 from "../assets/images/imageGallery9.jpg";
-import imageGallery10 from "../assets/images/imageGallery10.jpg";
-import imageGallery11 from "../assets/images/imageGallery11.jpg";
-import imageGallery12 from "../assets/images/imageGallery12.jpg";
-import imageGallery13 from "../assets/images/imageGallery13.jpg";
-import imageGallery14 from "../assets/images/imageGallery14.jpg";
-import imageGallery15 from "../assets/images/imageGallery15.jpg";
+
+import { BsThreeDots } from "react-icons/bs";
+import { HiOutlineArrowUpTray } from "react-icons/hi2";
 import AuthenticatedHeader from "../components/layout/AuthenticatedHeader";
 import { imageGallery } from "../components/constant/Constant";
 import Button from "../components/ui/Button";
 
 const AuthenticatedGallery = () => {
+  // const randomImageHeight = imageGallery.map(
+  //   () => Math.floor(Math.random() * (300 - 200 + 1)) + 200
+  // );
   return (
     <div>
       <AuthenticatedHeader />
-      <div className='w-64 h-64 absolute top-24 z-30 hover:bg-red-900 opacity-40 rounded-xl'>
-        <Button
-          title='Save'
-          className='bg-red-900'
-        />
-      </div>
-      <div className='grid grid-cols-5 gap-4 mt-24 px-4'>
-        <div className='space-y-5'>
-          <div>
+      <div className='columns-5 gap-3 mt-24 px-4'>
+        {imageGallery.map((item, i) => (
+          <div
+            key={i}
+            className='mb-3 relative group'>
             <img
-              className='h-auto w-full rounded-lg object-cover object-center relative'
-              src={imageGallery1}
-              alt='gallery-photo'
+              src={item.src}
+              alt='images'
+              className={`w-full h-full rounded-xl `}
             />
+            <div className='absolute inset-0  cursor-pointer hover:bg-black opacity-10  group-hover:opacity-50 transition-opacity rounded-xl'>
+              <Button
+                className='absolute group-hover:opacity-100 right-3 top-3 opacity-0 transition-opacity bg-[#B60000] text-white '
+                title='Save'
+              />
+              <div className='absolute group-hover:opacity-100 bottom-2 flex gap-1 right-3  opacity-0 transition-opacity '>
+                <div className='bg-white rounded-full p-4'>
+                  <HiOutlineArrowUpTray />
+                </div>
+                <div className='bg-white rounded-full p-4'>
+                  <BsThreeDots />
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
-            <img
-              className='h-auto w-full rounded-lg object-cover object-center '
-              src={imageGallery2}
-              alt='gallery-photo'
-            />
-          </div>
-          <div>
-            <img
-              className='h-auto w-full rounded-lg object-cover object-center'
-              src={imageGallery3}
-              alt='gallery-photo'
-            />
-          </div>
-        </div>
-        <div className='space-y-5'>
-          <div>
-            <img
-              className='h-auto w-full rounded-lg object-cover object-center'
-              src={imageGallery4}
-              alt='gallery-photo'
-            />
-          </div>
-          <div>
-            <img
-              className='h-56 w-full rounded-lg object-cover object-center'
-              src={imageGallery5}
-              alt='gallery-photo'
-            />
-          </div>
-          <div>
-            <img
-              className='h-auto w-full rounded-lg object-cover object-center '
-              src={imageGallery6}
-              alt='gallery-photo'
-            />
-          </div>
-        </div>
-        <div className='space-y-5'>
-          <div>
-            <img
-              className='h-56 w-full rounded-lg object-cover object-center'
-              src={imageGallery7}
-              alt='gallery-photo'
-            />
-          </div>
-          <div>
-            <img
-              className='h-auto w-full rounded-lg object-cover object-center '
-              src={imageGallery8}
-              alt='gallery-photo'
-            />
-          </div>
-          <div>
-            <img
-              className='h-auto w-full rounded-lg object-cover object-center'
-              src={imageGallery9}
-              alt='gallery-photo'
-            />
-          </div>
-        </div>
-        <div className='space-y-5'>
-          <div>
-            <img
-              className='h-auto w-full rounded-lg object-cover object-center'
-              src={imageGallery10}
-              alt='gallery-photo'
-            />
-          </div>
-          <div>
-            <img
-              className='h-auto w-full rounded-lg object-cover object-center'
-              src={imageGallery11}
-              alt='gallery-photo'
-            />
-          </div>
-          <div>
-            <img
-              className='h-56 w-full rounded-lg object-cover object-center'
-              src={imageGallery12}
-              alt='gallery-photo'
-            />
-          </div>
-        </div>
-        <div className='space-y-5'>
-          <div>
-            <img
-              className='h-56 w-full rounded-lg object-cover object-center '
-              src={imageGallery13}
-              alt='gallery-photo'
-            />
-          </div>
-          <div>
-            <img
-              className='h-auto w-full rounded-lg object-cover object-center'
-              src={imageGallery14}
-              alt='gallery-photo'
-            />
-          </div>
-          <div>
-            <img
-              className='h-auto w-full rounded-lg object-cover object-center'
-              src={imageGallery15}
-              alt='gallery-photo'
-            />
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

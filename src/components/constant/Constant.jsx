@@ -33,6 +33,24 @@ import imageGallery9 from "../../assets/images/imageGallery9.jpg";
 import imageGallery10 from "../../assets/images/imageGallery10.jpg";
 import imageGallery11 from "../../assets/images/imageGallery11.jpg";
 import imageGallery12 from "../../assets/images/imageGallery12.jpg";
+import imageGallery13 from "../../assets/images/imageGallery13.jpg";
+import imageGallery14 from "../../assets/images/imageGallery14.jpg";
+import imageGallery15 from "../../assets/images/imageGallery15.jpg";
+import imageGallery16 from "../../assets/images/imageGallery16.jpg";
+import imageGallery17 from "../../assets/images/imageGallery17.jpg";
+import imageGallery18 from "../../assets/images/imageGallery18.jpg";
+import imageGallery19 from "../../assets/images/imageGallery19.jpg";
+import imageGallery20 from "../../assets/images/imageGallery20.jpg";
+import imageGallery21 from "../../assets/images/imageGallery21.jpg";
+import imageGallery22 from "../../assets/images/imageGallery22.jpg";
+import imageGallery23 from "../../assets/images/imageGallery23.jpg";
+import imageGallery24 from "../../assets/images/imageGallery24.jpg";
+import imageGallery25 from "../../assets/images/imageGallery25.jpg";
+import imageGallery26 from "../../assets/images/imageGallery26.jpg";
+import imageGallery27 from "../../assets/images/imageGallery27.jpg";
+import imageGallery28 from "../../assets/images/imageGallery28.jpg";
+import imageGallery29 from "../../assets/images/imageGallery29.jpg";
+import imageGallery30 from "../../assets/images/imageGallery30.jpg";
 
 export const SearchImages = [
   {
@@ -188,35 +206,27 @@ export const CardData = [
 export const imageGallery = [
   {
     src: imageGallery1,
-    customStyle: "height-[44px]",
   },
   {
     src: imageGallery2,
-    customStyle: "height-[44px]",
   },
   {
     src: imageGallery3,
-    customStyle: "height-[44px]",
   },
   {
     src: imageGallery4,
-    customStyle: "height-[44px]",
   },
   {
     src: imageGallery5,
-    customStyle: "height-[44px]",
   },
   {
     src: imageGallery6,
-    customStyle: "height-[44px]",
   },
   {
     src: imageGallery7,
-    customStyle: "height-[44px]",
   },
   {
     src: imageGallery8,
-    customStyle: "height-[44px]",
   },
   {
     src: imageGallery9,
@@ -230,124 +240,58 @@ export const imageGallery = [
   {
     src: imageGallery12,
   },
+  {
+    src: imageGallery13,
+  },
+  {
+    src: imageGallery14,
+  },
+  {
+    src: imageGallery15,
+  },
+  {
+    src: imageGallery16,
+  },
+  {
+    src: imageGallery17,
+  },
+  {
+    src: imageGallery18,
+  },
+  {
+    src: imageGallery19,
+  },
+  {
+    src: imageGallery20,
+  },
+  {
+    src: imageGallery21,
+  },
+  {
+    src: imageGallery22,
+  },
+  {
+    src: imageGallery23,
+  },
+  {
+    src: imageGallery24,
+  },
+  {
+    src: imageGallery25,
+  },
+  {
+    src: imageGallery26,
+  },
+  {
+    src: imageGallery27,
+  },
+  {
+    src: imageGallery28,
+  },
+  {
+    src: imageGallery29,
+  },
+  {
+    src: imageGallery30,
+  },
 ];
-
-{
-  /* <div className='grid grid-cols-5 gap-4'>
-      <div className='space-y-5'>
-        <div>
-          <img
-            className='h-auto w-full rounded-lg object-cover object-center'
-            src={imageGallery1}
-            alt='gallery-photo'
-          />
-        </div>
-        <div>
-          <img
-            className='h-auto w-full rounded-lg object-cover object-center '
-            src={imageGallery2}
-            alt='gallery-photo'
-          />
-        </div>
-        <div>
-          <img
-            className='h-auto w-full rounded-lg object-cover object-center'
-            src={imageGallery3}
-            alt='gallery-photo'
-          />
-        </div>
-      </div>
-      <div className='space-y-5'>
-        <div>
-          <img
-            className='h-auto w-full rounded-lg object-cover object-center'
-            src={imageGallery4}
-            alt='gallery-photo'
-          />
-        </div>
-        <div>
-          <img
-            className='h-56 w-full rounded-lg object-cover object-center'
-            src={imageGallery5}
-            alt='gallery-photo'
-          />
-        </div>
-        <div>
-          <img
-            className='h-auto w-full rounded-lg object-cover object-center '
-            src={imageGallery6}
-            alt='gallery-photo'
-          />
-        </div>
-      </div>
-      <div className='space-y-5'>
-        <div>
-          <img
-            className='h-56 w-full rounded-lg object-cover object-center'
-            src={imageGallery7}
-            alt='gallery-photo'
-          />
-        </div>
-        <div>
-          <img
-            className='h-auto w-full rounded-lg object-cover object-center '
-            src={imageGallery8}
-            alt='gallery-photo'
-          />
-        </div>
-        <div>
-          <img
-            className='h-auto w-full rounded-lg object-cover object-center'
-            src={imageGallery9}
-            alt='gallery-photo'
-          />
-        </div>
-      </div>
-      <div className='space-y-5'>
-        <div>
-          <img
-            className='h-auto w-full rounded-lg object-cover object-center'
-            src={imageGallery10}
-            alt='gallery-photo'
-          />
-        </div>
-        <div>
-          <img
-            className='h-auto w-full rounded-lg object-cover object-center'
-            src={imageGallery11}
-            alt='gallery-photo'
-          />
-        </div>
-        <div>
-          <img
-            className='h-56 w-full rounded-lg object-cover object-center'
-            src={imageGallery12}
-            alt='gallery-photo'
-          />
-        </div>
-      </div>
-      <div className='space-y-5'>
-        <div>
-          <img
-            className='h-56 w-full rounded-lg object-cover object-center '
-            src={imageGallery13}
-            alt='gallery-photo'
-          />
-        </div>
-        <div>
-          <img
-            className='h-auto w-full rounded-lg object-cover object-center'
-            src={imageGallery14}
-            alt='gallery-photo'
-          />
-        </div>
-        <div>
-          <img
-            className='h-auto w-full rounded-lg object-cover object-center'
-            src={imageGallery15}
-            alt='gallery-photo'
-          />
-        </div>
-      </div>
-    </div> */
-}

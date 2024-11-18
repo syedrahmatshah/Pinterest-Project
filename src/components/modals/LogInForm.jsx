@@ -26,11 +26,6 @@ const LogInForm = ({ openModal, closeModal, onSubmit, onBlur }) => {
     setIsVisiblePassword(!isVisiblePassword);
   };
 
-  const handleLogin = () => {
-    setIsLogin(true);
-    navigate("/AuthenticatedGallery");
-  };
-
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -85,7 +80,6 @@ const LogInForm = ({ openModal, closeModal, onSubmit, onBlur }) => {
           <Button
             className='font-semibold w-64 mb-1 rounded-full py-2.5 px-3 text-base bg-[#CC0000] hover:bg-[#b60000] text-[#FFFFFF] '
             title={isLoading ? "LogIn..." : "Continue"} // Button title changes based on loading state
-            onClick={handleLogin}
             type='submit'
           />
 

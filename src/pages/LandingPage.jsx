@@ -36,7 +36,7 @@ const LandingPage = () => {
           <GuestHeader />
 
           {/* Hero text and Call to Action */}
-          <div className='text-center absolute left-96 z-10 top-1/4 '>
+          <div className='text-center absolute left-96 z-10  '>
             <h1 className='text-6xl font-semibold text[#111111]'>
               Get Your Next
             </h1>
@@ -45,7 +45,7 @@ const LandingPage = () => {
             </h3>
 
             {/* Scroll-down indicator button */}
-            <div className='absolute z-200 flex justify-center items-center ml-64 mt-52 w-12 h-12 text-center cursor-pointer rounded-full animate-bouncingDropDown bg-[#C28B00] border'>
+            <div className='absolute z-200 flex justify-center items-center ml-64 mt-32 w-12 h-12 text-center cursor-pointer rounded-full animate-bouncingDropDown bg-[#C28B00] border'>
               <a href='#watch'>
                 <DropDown className='text-white' />
               </a>
@@ -53,7 +53,7 @@ const LandingPage = () => {
           </div>
 
           {/* Image Slides on both sides of the hero section */}
-          <div className='flex justify-between mt-60 relative'>
+          <div className='flex justify-between mt-64 relative'>
             {/* <<<<<<<<<<<< Left Image Slide Animation >>>>>>>>>>>>>> */}
             <div className='flex space-x-3.5 '>
               <div className='w-12 h-80 rounded-r-2xl animate-wiggleSlow'>
